@@ -1,4 +1,4 @@
-﻿Build started 3/28/2014 12:53:26 PM.
+﻿Build started 3/28/2014 1:13:21 PM.
      1>Project "C:\Users\Hotsauce\GitHub\TankGame\TankGame\TankGame\TankGame.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Hotsauce\GitHub\TankGame\Libraries\SDL2-2.0.2\include\myrpg" /I"C:\Users\Hotsauce\GitHub\TankGame\Libraries\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include" /I"C:\Users\Hotsauce\GitHub\TankGame\Libraries\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp SDL_Setup.cpp Sprite.cpp TankGame.cpp
@@ -25,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.31
+Time Elapsed 00:00:02.80
