@@ -1,7 +1,7 @@
 #pragma once
 #include "SDL_Setup.h"
 #include "Sprite.h"
-#include <math.h> 
+#include <cmath>
 
 class CMain
 {
@@ -19,8 +19,7 @@ private:
 
 	CSprite* grass;
 
-
-	CSprite* bob;
+	CSprite* tank;
 
 	CSDL_Setup* csdl_setup;
 
@@ -30,7 +29,4 @@ private:
 	bool Follow;
 	int Follow_Point_X;
 	int Follow_Point_Y;
-
-	float distance;
-	bool stopAnimation;
 };

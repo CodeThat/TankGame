@@ -1,4 +1,5 @@
 #pragma once
+
 class CSprite
 {
 public:
@@ -20,8 +21,7 @@ public:
 	int GetHeight();
 
 	void SetOrgin(float X, float Y);
-	void PlayAnimation(int BeginFrame, int EndFrame, int Row, float Speed);
-	void SetUpAnimation(int passed_Amount_X, int passed_Amount_Y);
+
 private:
 	float Orgin_X;
 	float Orgin_Y;
@@ -31,16 +31,9 @@ private:
 
 	SDL_Texture* image;
 	SDL_Rect rect;
-
 	SDL_Rect crop;
-
 	int img_width;
 	int img_height;
-	int CurrentFrame;
-	int animationDelay;
-
-	int Amount_Frame_X;
-	int Amount_Frame_Y;
 
 	SDL_Renderer* renderer;
 };
