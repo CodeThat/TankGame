@@ -1,5 +1,4 @@
 #pragma once
-
 class CSprite
 {
 public:
@@ -8,16 +7,40 @@ public:
 
 	void Draw();
 
-	void SetX(int x );
-	void SetY(int y);
-	void SetPosition(int x, int y);
+	void SetX(float X);
+	void SetY(float Y);
+	void SetPosition(float X, float Y);
 
-	int GetX();
-	int GetY();
+	float GetX();
+	float GetY();
 
+	void SetWidth(int W);
+	void SetHeight(int H);
+	int GetWidth();
+	int GetHeight();
+
+	void SetOrgin(float X, float Y);
+	void PlayAnimation(int BeginFrame, int EndFrame, int Row, float Speed);
+	void SetUpAnimation(int passed_Amount_X, int passed_Amount_Y);
 private:
+	float Orgin_X;
+	float Orgin_Y;
+
+	float X_pos;
+	float Y_pos;
+
 	SDL_Texture* image;
 	SDL_Rect rect;
+
+	SDL_Rect crop;
+
+	int img_width;
+	int img_height;
+	int CurrentFrame;
+	int animationDelay;
+
+	int Amount_Frame_X;
+	int Amount_Frame_Y;
 
 	SDL_Renderer* renderer;
 };
